@@ -1,0 +1,26 @@
+<section class="weather-display">
+	<h1>Forecast</h1>
+	<ul class="forecast">
+	{{#each data}}
+	{{#if flag}}
+	  <li class="forecast-item">
+	    <p>{{currDate}}</p>
+	{{/if}}
+
+	<div class="forecast-detail">
+	  <p>
+	      <strong>
+	          <span class="time">
+	              Time: {{time}}
+	          </span>
+	      </strong>
+	  </p>
+	  <ul>
+	      <li class="condition">Condition: {{condition}}</li>
+	      <li class="temp">Temp: {{showUnit unit temp}}</li>
+	  </ul>
+	</div>
+
+	{{/each}}
+	</ul>
+</section>

@@ -1,0 +1,26 @@
+$font-stack:    Helvetica, sans-serif
+$primary-color: black
+
+=transform($property)
+  -webkit-transform: $property
+  -ms-transform: $property
+  transform: $property
+
+
+ul
+ li
+  p
+   display: inline-block
+   color: $primary-color
+   font: 100% $font-stack
+   +transform(rotate(0deg))
+ div
+  color: $primary-color
+  font: 100% $font-stack
+  p
+   color: grey
+  ul
+   color: blue
+  	
+h1
+ color: red
